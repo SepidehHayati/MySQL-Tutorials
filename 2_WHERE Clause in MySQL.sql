@@ -1,3 +1,4 @@
+#Data Analyst Bootcamp with Alex Freberg
 #WHERE Clause in My SQL-Video 05 on Data Analyst on Youtube
 # The WHERE Clause is used to help filter our records or rows of data 
 # whereas the SELECT statement is used to help filter or select our actual columns.
