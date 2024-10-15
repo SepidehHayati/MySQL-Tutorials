@@ -1,6 +1,7 @@
 #Data Analyst Bootcamp with Alex Freberg
-#Video 04 on YouTube Channel
-#Lesson: Select Statement in MySQL | Beginner MySQL Series
+  #Video 04 on YouTube Channel
+  #Beginner MySQL Series
+  #Lesson: Select Statement in MySQL | Beginner MySQL Series
 
 -- Select all columns from the employee_demographics table
 SELECT *
