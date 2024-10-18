@@ -6,7 +6,7 @@
   - Grouping data using `GROUP BY` and ordering them with `ORDER BY`
   - Filtering data with `HAVING` clauses
   - Using `LIMIT` and creating aliases with `AS`
-  - The Beginner Level Practice file contains various practice queries to review and reinforce the basic concepts.
+  - The _Beginner Level Practice_ file contains various practice queries to review and reinforce the basic concepts.
 
 - **Intermediate MySQL**: In this folder, 6 more complex MySQL topics are covered, including:
   - Joining tables using different types of `JOIN`
@@ -15,14 +15,14 @@
   - Implementing conditional logic with `CASE` statements
   - Writing Subqueries for more complex queries
   - Using Window functions for advanced data analysis
-  - The Intermediate Level Practice contains intermediate-level queries to practice the topics covered.
+  - The _Intermediate Level Practice_ contains intermediate-level queries to practice the topics covered.
 
 - **Advanced MySQL**: This section covers 4 advanced techniques for working with large datasets and more sophisticated MySQL concepts:
   - Using Common Table Expressions (CTEs) for temporary result sets
   - Creating and using temporary tables (Temp Tables)
   - Writing and executing Stored Procedures for modular query management 
   - Working with Triggers and Events for automatic database management
-  - The Advanced Level Practice contains challenging queries and exercises for applying advanced MySQL concepts in real-world scenarios.
+  - The _Advanced Level Practice_ contains challenging queries and exercises for applying advanced MySQL concepts in real-world scenarios.
 
 ## How to Use
 
