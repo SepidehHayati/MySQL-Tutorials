@@ -51,5 +51,5 @@ Feel free to modify the queries or create your own as you progress through each 
 ## Author
 
 **Sepideh Hayati**
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
-- GitHub: [Your GitHub Profile](https://github.com/your-username)
+- [LinkedIn](https://www.linkedin.com/in/sepidehhayati/)
+- [GitHub](https://github.com/SepidehHayati)
