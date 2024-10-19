@@ -1,14 +1,15 @@
-#Data Analyst Bootcamp with Alex Freberg
-  #Beginner MySQL Series
-  #Practice Beginner Level
-  
-  
+# Data Analyst Bootcamp with Alex Freberg
+# Beginner MySQL Series
+# Practice Beginner Level
+
 -- Practice Questions:
 
 # SELECT
 -- Q 1: Retrieve all columns from the employee_demographics table.
 SELECT *
 FROM employee_demographics;
+
+#---------------------------------------------------------------------------------------------------
 
 -- Q 2: Retrieve the first_name, last_name, and age from the employee_demographics table.
 SELECT first_name, last_name, age
@@ -18,7 +19,7 @@ FROM employee_demographics;
 
 # Arithmetic operations
 -- Q 1: Retrieve the first_name, last_name, and age, and display the age incremented by 10.
-SELECT first_name, last_name, age,  age + 10 AS AGE_Plus_10     
+SELECT first_name, last_name, age, age + 10 AS AGE_Plus_10     
 FROM employee_demographics;
 
 #---------------------------------------------------------------------------------------------------
@@ -46,7 +47,7 @@ WHERE age > 35 AND gender = 'Female';
 
 #---------------------------------------------------------------------------------------------------
 
-#LIKE operator
+# LIKE operator
 -- Q 1: Retrieve all employees whose first_name starts with 'A'.
 SELECT *
 FROM employee_demographics
@@ -72,8 +73,7 @@ LIMIT 3;
 
 # SELECT with ALIAS
 -- Q 1: Retrieve the first name and last name of employees, and display their full name using an alias full_name.
--- Answer:
-SELECT first_name, last_name, CONCAT (First_name, ' ', Last_name) AS Full_name
+SELECT first_name, last_name, CONCAT(first_name, ' ', last_name) AS Full_name
 FROM employee_demographics;
 
 #--------------------------------------------------------------------------------------------------- 
@@ -138,15 +138,78 @@ HAVING Total_em > 2;
 
 #--------------------------------------------------------------------------------------------------- 
 
--- 20. SELECT with JOIN
--- Q: Retrieve the first_name, last_name, and salary of employees by joining employee_demographics with employee_salary.
+-- JOIN (inner join, left join, right join)
+
+-- INNER JOIN:
+-- Q 1: Retrieve the first_name, last_name, and salary of employees by joining employee_demographics with employee_salary.
 -- This type of join retrieves only the rows where there is a match between the two tables based on the condition specified.
 SELECT EM.first_name, EM.last_name, SA.salary
 FROM employee_demographics AS EM
 INNER JOIN employee_salary AS SA
 ON EM.employee_id = SA.employee_id;
 
+#--------------------------------------------------------------------------------------------------- 
 
+-- Q 2: Retrieve a list of all employees along with their occupation and salary.
+SELECT dem.first_name, dem.last_name, sal.occupation, sal.salary
+FROM employee_salary AS sal
+INNER JOIN employee_demographics AS dem
+ON dem.employee_id = sal.employee_id;
 
+#--------------------------------------------------------------------------------------------------- 
 
+-- Q 3: Retrieve the first_name, last_name, and occupation of all employees whose salary is greater than 60,000.
+SELECT dem.first_name, dem.last_name, sal.occupation, sal.salary
+FROM employee_demographics AS dem
+INNER JOIN employee_salary AS sal
+ON dem.employee_id = sal.employee_id
+WHERE sal.salary > 60000;
 
+#--------------------------------------------------------------------------------------------------- 
+
+-- Q 4: Retrieve the first_name, last_name, age, and occupation of all employees who work in department 1.
+SELECT dem.first_name, dem.last_name, sal.occupation, sal.salary, sal.dept_id
+FROM employee_demographics AS dem
+INNER JOIN employee_salary AS sal
+ON dem.employee_id = sal.employee_id
+WHERE sal.dept_id = 1;
+
+#--------------------------------------------------------------------------------------------------- 
+
+-- LEFT JOIN
+-- Q 5: Retrieve all employees from employee_demographics, even if they don’t have a salary record in employee_salary.
+-- Explanation: A LEFT JOIN ensures that all records from employee_demographics are shown, even if there is no corresponding entry in employee_salary.
+SELECT dem.employee_id, dem.first_name, dem.last_name, sal.employee_id, sal.occupation, sal.salary
+FROM employee_demographics AS dem
+LEFT JOIN employee_salary AS sal
+ON dem.employee_id = sal.employee_id;
+
+#--------------------------------------------------------------------------------------------------- 
+
+-- RIGHT JOIN
+-- Q 6: Retrieve all records from employee_salary, even if the employee doesn't exist in employee_demographics.
+-- Explanation: A RIGHT JOIN ensures that all records from employee_salary are shown, even if there is no match in employee_demographics.
+SELECT dem.employee_id, dem.first_name, dem.last_name, sal.employee_id, sal.occupation, sal.salary
+FROM employee_demographics AS dem
+RIGHT JOIN employee_salary AS sal
+ON dem.employee_id = sal.employee_id;
+
+#--------------------------------------------------------------------------------------------------- 
+
+-- Q 7: FULL OUTER JOIN (Simulated with UNION)
+-- Question: Retrieve all employees, including those with and without salary records, combining the LEFT and RIGHT JOINs.
+SELECT dem.employee_id, dem.first_name, dem.last_name, sal.employee_id, sal.occupation, sal.salary
+FROM employee_demographics AS dem
+LEFT JOIN employee_salary AS sal
+ON dem.employee_id = sal.employee_id
+UNION 
+SELECT dem.employee_id, dem.first_name, dem.last_name, sal.employee_id, sal.occupation, sal.salary
+FROM employee_demographics AS dem
+RIGHT JOIN employee_salary AS sal
+ON dem.employee_id = sal.employee_id;
+
+#--------------------------------------------------------------------------------------------------- 
+
+-- Q 8: SELF JOIN
+-- This section is reserved for any self-join queries, which can be added here.
+-- Self joins are used to combine rows in a table with other rows in the same table based on a related column.
