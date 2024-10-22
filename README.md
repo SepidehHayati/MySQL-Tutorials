@@ -45,6 +45,7 @@ The goal of this repository is to:
 - Guide intermediate users through complex concepts such as joins, unions, and window functions.
 - Challenge advanced users with techniques like CTEs, temporary tables, stored procedures, and triggers.
 
+This repository was created as a way for me to review and strengthen my own understanding of MySQL, and I hope others find it useful as well. Feel free to modify the queries or create your own as you progress through each level!
 Feel free to modify the queries or create your own as you progress through each level!
 
 
