@@ -3,6 +3,9 @@
   #Intermediate MySQL Series
   #Lesson: Join in MySQL
   
+
+#Description OF INNER join: Returns rows where there is a match in both tables.
+
 -- 1. INNER JOIN between two tables (employee_demographics and employee_salary):
 -- An INNER JOIN returns only the rows where there is a match in both tables based on employee_id.
 -- This query combines all columns from both tables where the employee_id matches.
@@ -48,6 +51,11 @@ INNER JOIN employee_salary AS sa
 ;
 # ---------------------------------------------------------------------
 
+# LEFT JOIN (or LEFT OUTER JOIN):
+-- Description: Returns all rows from the left table and matched rows from the right table. 
+-- If there’s no match, NULL values are returned for columns from the right table.
+
+
 -- 5. Performing a LEFT JOIN:
 -- A LEFT JOIN returns all records from the left table (employee_demographics), 
 -- and the matching records from the right table (employee_salary). 
@@ -59,6 +67,10 @@ LEFT JOIN employee_salary AS sa
 	ON dem.employee_id = sa.employee_id
 ;
 # ---------------------------------------------------------------------
+
+#RIGHT JOIN (or RIGHT OUTER JOIN):
+-- Description: Returns all rows from the right table and matched rows from the left table. 
+-- If there’s no match, NULL values are returned for columns from the left table.
 
 -- 6. Performing a RIGHT JOIN:
 -- A RIGHT JOIN returns all records from the right table (employee_salary), 
@@ -73,6 +85,9 @@ RIGHT JOIN employee_salary AS sa
 
 # ---------------------------------------------------------------------
 
+#SELF JOIN
+-- Description: Joins a table to itself, useful for comparing rows within the same table.
+	
 -- 7. SELF JOIN to find employees whose employee_id is one more than another:
 -- A SELF JOIN is a join of a table with itself. 
 -- Here, we are comparing employee_salary to itself (EMP1 and EMP2) to find records where EMP1's employee_id is one more than EMP2's.
@@ -118,3 +133,6 @@ inner join parks_departments pd
     on sal.dept_id = pd.department_id
 ;
 
+# FULL OUTER JOIN
+-- Description: Returns all rows when there is a match in one of the tables. 
+-- Rows with no match in one of the tables will contain NULL for that table’s columns.
