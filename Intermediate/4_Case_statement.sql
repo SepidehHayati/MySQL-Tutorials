@@ -8,10 +8,10 @@
 
 SELECT last_name, first_name, age,
   CASE 
-    WHEN age <= 30 THEN 'Young'             -- Categorizes age 30 and below as 'Young'
+    WHEN age <= 30 THEN 'Young'                  -- Categorizes age 30 and below as 'Young'
     WHEN age BETWEEN 31 AND 40 THEN 'middle-age' -- Categorizes age between 31 and 40 as 'middle-age'
-    WHEN age > 40 THEN 'old'                -- Categorizes age above 40 as 'old'
-  END AS age_Bracket                         -- Assigns result as 'age_Bracket'
+    WHEN age > 40 THEN 'old'                     -- Categorizes age above 40 as 'old'
+  END AS age_Bracket                             -- Assigns result as 'age_Bracket'
 FROM employee_demographics;
 
 # -----------------------------------------------------------------------
