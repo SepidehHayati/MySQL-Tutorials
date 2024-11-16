@@ -1,3 +1,7 @@
+
+This repository is a personal collection of MySQL exercises and examples inspired by the Data Analysis series by Alex on YouTube. It’s designed to help me review and strengthen my SQL skills while sharing useful resources with others.
+
+
 ## Folder Structure
 
 - **Beginner MySQL**: This folder includes the basic SQL concepts, organized into 5 lesson files:
@@ -38,14 +42,7 @@ To run these MySQL scripts, you'll need:
 - **MySQL** or a similar SQL database installed on your machine.
 - A basic understanding of SQL commands and how to execute them within a database management tool, like **MySQL Workbench**.
 
-## Goals
 
-The goal of this repository is to:
-- Help beginners build a strong foundation in MySQL.
-- Guide intermediate users through complex concepts such as joins, unions, and window functions.
-- Challenge advanced users with techniques like CTEs, temporary tables, stored procedures, and triggers.
-
-This repository was created as a way for me to review and strengthen my own understanding of MySQL, and I hope others find it useful as well.
 Feel free to modify the queries or create your own as you progress through each level!
 
 
