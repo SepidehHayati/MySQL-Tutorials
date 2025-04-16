@@ -6,8 +6,8 @@ This repository is a personal collection of MySQL exercises and examples inspire
 
 - **Beginner MySQL**: This folder includes the basic SQL concepts, organized into 5 lesson files: 
   - How to `CREATE DATABASE`
-  - how to `USE` database
-  - how to `CREATE TABLE`
+  - How to `USE` database
+  - How to `CREATE TABLE`
   - Writing basic `SELECT` queries
   - Filtering data with `WHERE` clauses
   - Grouping data using `GROUP BY` and ordering them with `ORDER BY`
