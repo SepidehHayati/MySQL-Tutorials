@@ -4,12 +4,24 @@ This repository is a personal collection of MySQL exercises and examples inspire
 
 ## Folder Structure
 
-- **Beginner MySQL**: This folder includes the basic SQL concepts, organized into 5 lesson files:
+- **Beginner MySQL**: This folder includes the basic SQL concepts, organized into 5 lesson files: 
+  - How to `CREATE DATABASE`
+  - how to `USE` database
+  - how to `CREATE TABLE`
   - Writing basic `SELECT` queries
   - Filtering data with `WHERE` clauses
   - Grouping data using `GROUP BY` and ordering them with `ORDER BY`
   - Filtering data with `HAVING` clauses
   - Using `LIMIT` and creating aliases with `AS`
+  - `DROP` table
+  - `PRIMARY KEY`
+  - `FOREIGN KEY`
+  - `UNIQUE KEY INDEX`
+  - `ALTER`, `CHANGE`, `DEFAULT`
+  - `MODIFY`, `CHANGE`, `NUL`, `NOT NULL`
+  - How to `INSERT`
+  - How to `UPDATE` table
+  - How to `DELETE`
   - The _Beginner Level Practice_ file contains various practice queries to review and reinforce the basic concepts.
 
 - **Intermediate MySQL**: In this folder, 6 more complex MySQL topics are covered, including:
