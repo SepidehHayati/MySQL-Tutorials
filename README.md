@@ -4,7 +4,7 @@ This repository is a personal collection of MySQL exercises and examples inspire
 
 ## Folder Structure
 
-- **Beginner MySQL**: This folder includes the basic SQL concepts, organized into 5 lesson files: 
+- **Beginner MySQL**: This folder includes the basic SQL concepts: 
   - How to `CREATE DATABASE`
   - How to `USE` database
   - How to `CREATE TABLE`
@@ -24,7 +24,7 @@ This repository is a personal collection of MySQL exercises and examples inspire
   - How to `DELETE`
   - The _Beginner Level Practice_ file contains various practice queries to review and reinforce the basic concepts.
 
-- **Intermediate MySQL**: In this folder, 6 more complex MySQL topics are covered, including:
+- **Intermediate MySQL**: In this folder, more complex MySQL topics are covered, including:
   - Joining tables using different types of `JOIN`
   - Using `UNION` to combine result sets
   - Applying String functions for text manipulation
@@ -33,7 +33,7 @@ This repository is a personal collection of MySQL exercises and examples inspire
   - Using Window functions for advanced data analysis
   - The _Intermediate Level Practice_ contains intermediate-level queries to practice the topics covered.
 
-- **Advanced MySQL**: This section covers 4 advanced techniques for working with large datasets and more sophisticated MySQL concepts:
+- **Advanced MySQL**: This section covers advanced techniques for working with large datasets and more sophisticated MySQL concepts:
   - Using Common Table Expressions (CTEs) for temporary result sets
   - Creating and using temporary tables (Temp Tables)
   - Writing and executing Stored Procedures for modular query management 
