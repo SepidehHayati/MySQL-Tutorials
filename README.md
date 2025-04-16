@@ -20,7 +20,7 @@ This repository is a personal collection of MySQL exercises and examples inspire
   - `ALTER`, `CHANGE`, `DEFAULT`
   - `MODIFY`, `CHANGE`, `NUL`, `NOT NULL`
   - How to `INSERT`
-  - How to `UPDATE` table
+  - How to `UPDATE` 
   - How to `DELETE`
   - The _Beginner Level Practice_ file contains various practice queries to review and reinforce the basic concepts.
 
